@@ -6,7 +6,7 @@ const o_even = value.even;
 // console.log('o_odd', o_odd)
 // console.log('o_even', o_even)
 
-
+// git test
 const {odd, even} = require('./var');
 // console.log('o2_odd', odd)
 // console.log('o2_even', even)

@@ -1,0 +1,27 @@
+<html>
+    <body><h1>Hi express learn ... upload </h1>
+    
+    <p>
+        <form action='/upload' method='post' enctype='multipart/form-data'>
+            <!-- <input type='file' name='image'  multiple/> -->
+            <input type='file' name='image1'  />
+            <input type='file' name='image2'  />
+            <input type='text' name='title' />
+            <button type='submit'>upload</button>
+        </form>
+    </p>
+    </body>
+    <script src='https://unpkg.com/axios/dist/axios.min.js'></script>
+    <script>
+        document.getElementById('form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            const formData = new FormData();
+            formData.append('image1', e.target.image.files[0]);
+            formData.append('image2', e.target.image.files[1]);
+            formData.append('title', e.target.title.value);
+            axios.post('/upload', formData);
+
+        });
+    </script>
+        
+</html>

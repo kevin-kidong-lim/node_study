@@ -4,12 +4,17 @@
   "description": "desc ...",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon app"
+    "start": "nodemon app_router"
   },
   "author": "kevin lim",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.17.1"
+    "cookie-parser": "^1.4.5",
+    "datenv": "0.0.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.2"
   },
   "devDependencies": {
     "nodemon": "^2.0.6"
